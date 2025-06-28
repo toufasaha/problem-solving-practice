@@ -1,69 +1,69 @@
 class Employee {
 
-    constructor(name, salary) {
-        this.name = name;
-        this.salary = salary;
-    }
-
-    displayTotalSalary(month) {
-        
-        let totalSalary;
-
-        if("january".startsWith(month)){
-                totalSalary = this.salary * 1;
-        }
-              
-        else if("february".startsWith(month)){
-                totalSalary = this.salary * 2;
+        constructor(name, salary) {
+                this.name = name;
+                this.salary = salary;
         }
 
-        else if("march".startsWith(month)){
-                totalSalary = this.salary * 3;
-        }
+        displayTotalSalary(month) {
 
-        else if("april".startsWith(month)){
-                totalSalary = this.salary * 4;
-        }
+                let totalSalary;
 
-        else if("may".startsWith(month)){
-                totalSalary = this.salary * 5;
-        }
+                if ("january".startsWith(month)) {
+                        totalSalary = this.salary * 1;
+                }
 
-        else if("june".startsWith(month)){
-                totalSalary = this.salary * 6;
-        }
+                else if ("february".startsWith(month)) {
+                        totalSalary = this.salary * 2;
+                }
 
-        else if("july".startsWith(month)){
-                totalSalary = this.salary * 7;
-        }
+                else if ("march".startsWith(month)) {
+                        totalSalary = this.salary * 3;
+                }
 
-        else if("august".startsWith(month)){
-                totalSalary = this.salary * 8;
-        }
-        
-        else if("september".startsWith(month)){
-                totalSalary = this.salary * 9;
-        }
+                else if ("april".startsWith(month)) {
+                        totalSalary = this.salary * 4;
+                }
 
-        else if("october".startsWith(month)){
-                totalSalary = this.salary * 10;
-        }
-        
-        else if("november".startsWith(month)){
-                totalSalary = this.salary * 11;
-        }
-        
-        else if("december".startsWith(month)){
-                totalSalary = this.salary * 12;
-        }
-        else{
-            console.log("invalid month");
-            return;
-        }
-        
+                else if ("may".startsWith(month)) {
+                        totalSalary = this.salary * 5;
+                }
 
-        console.log(`The Salary of ${this.name} for the month ${month} is: ${totalSalary}`);
-    }
+                else if ("june".startsWith(month)) {
+                        totalSalary = this.salary * 6;
+                }
+
+                else if ("july".startsWith(month)) {
+                        totalSalary = this.salary * 7;
+                }
+
+                else if ("august".startsWith(month)) {
+                        totalSalary = this.salary * 8;
+                }
+
+                else if ("september".startsWith(month)) {
+                        totalSalary = this.salary * 9;
+                }
+
+                else if ("october".startsWith(month)) {
+                        totalSalary = this.salary * 10;
+                }
+
+                else if ("november".startsWith(month)) {
+                        totalSalary = this.salary * 11;
+                }
+
+                else if ("december".startsWith(month)) {
+                        totalSalary = this.salary * 12;
+                }
+                else {
+                        console.log("invalid month");
+                        return;
+                }
+
+
+                console.log(`The Salary of ${this.name} for the month ${month} is: ${totalSalary}`);
+        }
 }
 
 const employeeRamesh = new Employee('Ramesh', 100000);

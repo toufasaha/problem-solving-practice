@@ -1,16 +1,15 @@
-function factorial(n){
-    let i = 1, res = 1;
-while(i <=n-1){
-    if(i < 0){
-        console.log("Undefined");
-        return;
-    }
-    
-    res *= i ;
-    i++;
-    
-}
-console.log(res * n);
-}
-factorial(4);
+function factorial(n) {
 
+    if(n == 1) {
+        return 1;
+    }
+
+    let val = factorial(n-1);
+    return n * val;
+}
+
+function getFactorial(n){
+    console.log(n * factorial(n-1));
+}
+
+getFactorial(5);

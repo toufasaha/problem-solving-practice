@@ -10,9 +10,9 @@ const jsonInput = [
     }
 ];
 
-let id =1;
+let id = 1;
 
-for(let i =0; i<jsonInput.length; i++){
+for (let i = 0; i < jsonInput.length; i++) {
     jsonInput[i].id = id;
     id++;
 }

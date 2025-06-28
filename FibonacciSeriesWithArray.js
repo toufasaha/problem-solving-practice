@@ -4,20 +4,20 @@ function fibonacciSeries(n) {
 
     let i = 2;
     let a = [0, 1];
-    if (n < 1){
+    if (n < 1) {
         console.log("invalid input");
         return;
 
     }
-    if (n == 1){
+    if (n == 1) {
         console.log(a[0]);
         return;
     }
 
-    while (i <n) {
+    while (i < n) {
 
-        a[i] = a[i-1] + a [i-2]
-      
+        a[i] = a[i - 1] + a[i - 2]
+
         i++;
     }
 
